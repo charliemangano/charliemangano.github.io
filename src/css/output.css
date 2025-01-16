@@ -243,7 +243,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Disket\ Mono;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -555,10 +555,28 @@ video {
 }
 
 .font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Disket\ Mono;
 }
 
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: 'Disket Mono';
+
+  src: url(../../public/fonts/Disket-Mono-Regular.ttf);
+
+  font-weight: normal;
+
+  font-style: normal;
 }
