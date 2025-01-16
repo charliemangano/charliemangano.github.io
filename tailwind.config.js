@@ -11,5 +11,8 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  safelist: [
+    'bg-primary',
+  ]
 }
 
