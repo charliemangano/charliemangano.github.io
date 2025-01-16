@@ -554,6 +554,11 @@ video {
   display: none;
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 232 232 / var(--tw-bg-opacity, 1));
+}
+
 .font-mono {
   font-family: Disket\ Mono;
 }
@@ -579,4 +584,4 @@ video {
   font-weight: normal;
 
   font-style: normal;
-}
+} 

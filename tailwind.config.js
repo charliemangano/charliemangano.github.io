@@ -2,11 +2,13 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        'mono': "Disket\\ Mono"
-      }
+    fontFamily: {
+      'mono': "Disket\\ Mono"
     },
+    backgroundColor: {
+      'primary': '#E8E8E8',
+    },
+    extend: {},
   },
   plugins: [],
 }
