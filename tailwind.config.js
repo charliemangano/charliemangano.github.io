@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Disket Mono", ...defaultTheme.fontFamily.mono, 'monospace'],
+        mono: ['var(--font-mono)', 'monospace'],
       },
     },
   },

@@ -25,5 +25,7 @@
 		--color-bg-primary: #EAE7E6;
 
 		--font-display: "Disket Mono", monospace;
+		/* redefining default fonts -- ugly but couldn't find better */
+		--font-mono: "Disket Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	}
 }
