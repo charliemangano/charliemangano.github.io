@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'mono': "Disket\\ Mono"
+    extend: {
+      fontFamily: {
+        mono: ["Disket Mono", ...defaultTheme.fontFamily.mono, 'monospace'],
+      },
     },
-    backgroundColor: {
-      'primary': '#E8E8E8',
-    },
-    extend: {},
   },
   plugins: [],
-  safelist: [
-    'bg-primary',
-  ]
 }
 

@@ -1,10 +1,29 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-@font-face {
-	font-family: 'Disket Mono';
-	src: url(../../public/fonts/Disket-Mono-Regular.ttf);
-	font-weight: normal;
-	font-style: normal;
-} 
+@layer base {
+	@font-face {
+		font-family: "Disket Mono";
+		font-style: normal;
+		font-weight: normal;
+		src: url('../../assets/fonts/disket-mono-regular-webfont.woff2') format('woff2'),
+				 url('../../assets/fonts/disket-mono-regular-webfont.woff') format('woff'),
+				 url('../../assets/fonts/disket-mono-regular.ttf') format('truetype');
+	} 
+	@font-face {
+		font-family: "Disket Mono";
+		font-style: normal;
+		font-weight: bold;
+		src: url('../../assets/fonts/disket-mono-bold-webfont.woff2') format('woff2'),
+				 url('../../assets/fonts/disket-mono-bold-webfont.woff') format('woff'),
+				 url('../../assets/fonts/disket-mono-bold.ttf') format('truetype');
+	}
+
+	@theme {
+		--color-*: initial; /* restricts color variables to only these and not the defaults */
+
+		--color-primary: #100D08;
+		--color-bg-primary: #EAE7E6;
+
+		--font-display: "Disket Mono", monospace;
+	}
+}
